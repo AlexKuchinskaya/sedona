@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alexandra Kuchynskaya](https://up.htmlacademy.ru/htmlcss/29/user/146257).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
