@@ -468,7 +468,7 @@ input[type="checkbox"].visually-hidden {
   display: flex;
   position: relative;
   margin-bottom: 29px;
-  width: 100%
+  width: 100%;
 }
 .search-variables label {
   font-weight: bold;
@@ -640,39 +640,18 @@ input[type="checkbox"].visually-hidden {
   z-index: 200;
   display: none;
 }
-/*.filter-input-checkbox:focus + .filter-checkbox {
-  width: 25px;
-  height: 23px;
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  z-index: 200;
-  box-shadow: 0 2px 2px 2px #0000ff;
-}*/
-/*.filter-input-checkbox:checked:focus + .filter-checkbox {
-  width: 25px;
-  height: 23px;
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  z-index: 200;
-}*/
-.filter-input-checkbox:focus + .filter-checkbox::before,
-.filter-input-checkbox:hover + .filter-checkbox::before {
-   box-shadow: 0 2px 2px 2px #0000ff;
+.filter-input-checkbox:focus + .filter-checkbox::before {
+  outline: 2px solid var(--basic-black);
 }
 .filter-input-checkbox:checked + .filter-checkbox::before,
-.filter-input-checkbox:checked:focus + .filter-checkbox::before,
-.filter-input-checkbox:checked:hover + .filter-checkbox::before  {
+.filter-input-checkbox:checked:focus + .filter-checkbox::before {
   display: none;
 }
 .filter-input-checkbox:checked + .filter-checkbox::after {
   display: block;
 }
-.filter-input-checkbox:checked:focus + .filter-checkbox::after,
-.filter-input-checkbox:checked:hover + .filter-checkbox::after {
-  display: block;
-  box-shadow: 0 2px 2px 2px #0000ff;
+.filter-input-checkbox:checked:focus + .filter-checkbox::after {
+  outline: 2px solid var(--basic-black);
 }
 .filter-input-checkbox:disabled + .filter-checkbox::before {
   background-image: url("../img/checkbox-off-disabled.svg");
@@ -953,8 +932,6 @@ input[type="checkbox"].visually-hidden {
   font-size: 12px;
   margin: 0;
   line-height: 18px;
-}
-.classification {
   font-weight: normal;
 }
 .results-item-price,
@@ -976,7 +953,7 @@ input[type="checkbox"].visually-hidden {
 }
 .results-list a:active {
   border: none;
-  color: var(--basic-black)
+  color: var(--basic-black);
 }
 .results-item-button {
   padding-top: 6px;
@@ -1007,9 +984,6 @@ input[type="checkbox"].visually-hidden {
 .button-down:active svg {
   fill: var(--basic-light-blue);
   outline: none;
-}
-.visually-hidden {
-  display: none;
 }
 @keyframes shake {
   0%,
