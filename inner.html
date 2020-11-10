@@ -5,14 +5,14 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles-min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <div class="container">
-      <header>
+      <header class="main-header">
         <nav class="main-navigation">
           <a class="main-header-logo" href="index.html" aria-label="На главную">
-            <img src="img/logo-sedona.svg" width="138" height="70" alt="">
+            <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип сайта Седоны">
           </a>
           <div class="main-navigation-wrapper">
             <ul class="clear-ul site-navigation">
@@ -21,7 +21,7 @@
               <li><a href="">Карта Штата</a></li>
               <li><a class="current">Гостиницы</a></li>
             </ul>
-        </div>
+          </div>
         </nav>
       </header>
       <main>
@@ -101,8 +101,8 @@
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0"></div>
-                    <div class="toggle toggle-max" tabindex="0"></div>
+                    <div class="toggle toggle-min" tabindex="0" aria-label="Увеличить"></div>
+                    <div class="toggle toggle-max" tabindex="0" aria-label="Уменьшить"></div>
                   </div>
                 </div>
               </fieldset>
@@ -111,13 +111,14 @@
           </form>
         </section>
         <section class="results">
-          <h2 class="visually-hidden">Результаты поиска</h2>
+          <h2 class="searched">Найдено: 3</h2>
+          <h3 class="classification">Сортировка:</h3>
           <ul class="clear-ul results-list">
-            <li class="searched">Найдено: 3</li>
-            <li class="classification">Сортировка:</li>
             <li class="results-item-price"><a class="by-price" href="">По цене</a></li>
             <li class="results-item-type"><a href="">По типу</a></li>
             <li class="results-item-ranking"><a href="">По рейтингу</a></li>
+          </ul>
+          <ul class="clear-ul button-list">
             <li class="results-item-button">
               <button class="button-triangle button-up" aria-label="Сортировать от меньшего к большему">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>

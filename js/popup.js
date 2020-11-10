@@ -3,9 +3,9 @@ const showFormButton = document.querySelector(`.accommodation-search`);
 const accommodationForm = document.querySelector(`.accommodation-form`);
 const formInputs = accommodationForm.querySelectorAll(`input`);
 const checkinInput = accommodationForm.querySelector(`.check-in-input`);
-const checkoutInput = accommodationForm.querySelectorAll(`.check-out-input`);
-const adultsInput = accommodationForm.querySelectorAll(`.tourist-number-adults`);
-const childrenInput = accommodationForm.querySelectorAll(`.tourist-number-children`);
+const checkoutInput = accommodationForm.querySelector(`.check-out-input`);
+const adultsInput = accommodationForm.querySelector(`.tourist-number-adults`);
+const childrenInput = accommodationForm.querySelector(`.tourist-number-children`);
 const formError = accommodationForm.querySelector(`.accommodation-form-error`);
 let isStorageSupport = true;
 let storage = ``;
@@ -50,7 +50,7 @@ window.addEventListener(`keydown`, (evt) => {
 });
 
 accommodationForm.addEventListener(`submit`, (evt) => {
-  if (!checkinInput.value || !checkoutInput.value || !adultsInput.value || !childrenInput.value) {
+  if (!checkoutInput.value || !adultsInput.value || !childrenInput.value) {
     evt.preventDefault();
     if (formError) {
       formError.classList.remove(`accommodation-form-error`);
