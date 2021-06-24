@@ -6,12 +6,11 @@ const checkinInput = accommodationForm.querySelector(`.check-in-input`);
 const checkoutInput = accommodationForm.querySelector(`.check-out-input`);
 const adultsInput = accommodationForm.querySelector(`.tourist-number-adults`);
 const childrenInput = accommodationForm.querySelector(`.tourist-number-children`);
-const formError = accommodationForm.querySelector(`.accommodation-form-error`);
+let formError = accommodationForm.querySelector(`.accommodation-form-error`);
 let isStorageSupport = true;
 let storage = ``;
 
 accommodationForm.classList.remove(`accommodation-form-nojs`);
-
 const onShowFormButtonClick = () => {
   if (accommodationForm.classList.contains(`accommodation-form-closed`)) {
     accommodationForm.classList.remove(`accommodation-form-closed`);
@@ -43,19 +42,20 @@ const onWindowEscape = () => {
 }
 
 window.addEventListener(`keydown`, (evt) => {
-  if (evt.keyCode ===  ESCAPE) {
-    evt.preventDefault();
-    onWindowEscape();
+  if (accommodationForm.classList.contains(`accommodation-form-opened`)) {
+    if (evt.keyCode ===  ESCAPE) {
+      evt.preventDefault();
+      onWindowEscape();
+    }
   }
 });
 
 accommodationForm.addEventListener(`submit`, (evt) => {
   if (!checkoutInput.value || !adultsInput.value || !childrenInput.value) {
     evt.preventDefault();
-    if (formError) {
-      formError.classList.remove(`accommodation-form-error`);
-    }
-    const checkError = !accommodationForm.classList.contains(`accommodation-form-error`) ? accommodationForm.classList.add(`accommodation-form-error`) : accommodationForm.classList.remove(`accommodation-form-error`);
+    accommodationForm.classList.remove(`accommodation-form-error`)
+    accommodationForm.offsetWidth = accommodationForm.offsetWidth;
+    accommodationForm.classList.add(`accommodation-form-error`)
   } else {
     if (isStorageSupport) {
       localStorage.setItem(`checckin`, checkinInput.value);

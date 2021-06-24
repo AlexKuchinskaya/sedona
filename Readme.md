@@ -1,43 +1,25 @@
-# Личный проект «Седона»
+# Travel website Sedona
 
-* Студент: [Alexandra Kuchynskaya](https://up.htmlacademy.ru/htmlcss/29/user/146257).
-* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
+[Figma Link](https://www.figma.com/file/aMM4jdIPgE2YFR712rgyXV/HTML-1-%2F-%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0-(29))
 
----
+[Published site](https://alexandra207.github.io/sedona/) 
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
+"Sedona" was written in HTML, CSS and vanilla JS(ES2015+)
 
----
+There are 2 interactive elements in this project: map and popup with booking form. Website styled with flexboxes and grid layouts. As the the task was to make a fixed layout, the website is not responsive for now, but potentially it can be flexible.
 
-### Памятка
-
-#### 1. Зарегистрируйтесь на Гитхабе
-
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
-
-#### 2. Создайте форк
-
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/146257-sedona-29) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037949-67a635d6-7bae-11e7-9f2f-1a48fde231b9.jpg">
-
-Получится вот так:
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037953-6a8a7384-7bae-11e7-83ac-59603b1d696c.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Нажмите кнопку «Clone or download», а затем «Open in Desktop», чтобы клонировать репозиторий через программу [GitHub Desktop](https://desktop.github.com):
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037955-6c20c16c-7bae-11e7-9e1a-c52010042976.jpg">
-
-Программа клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
+Good practices in terms of accessibility, SEO, performance. For example, the website can be fully navigated with the 'Tab' button.
 
 ---
 
-<a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
+[Ссылка на макет в Figma](https://www.figma.com/file/aMM4jdIPgE2YFR712rgyXV/HTML-1-%2F-%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0-(29))
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Профессиональная вёрстка сайтов](https://htmlacademy.ru/intensive/htmlcss)» от [HTML Academy](https://htmlacademy.ru).
+[Опубликованный сайт](https://alexandra207.github.io/sedona/) 
+
+Сайт по поиску жилья в маленьком американском городке Седона.
+
+"Sedona" это учебный проект, который написан с использованием ванильного HTML, CSS и JS(ES2015+. 
+
+В проекте есть 2 интерактивных элемента: карта и попап с формой бронирования. Страницы стилизованы при помощи флексбоксов и гридов. Потенциально сайт может быть адаптивным, но по ТЗ сетка должна была быть фиксированной.
+
+Были использованы хорошие практики с точки зрения доступности, SEO, производительности. Например, по сайту можно полностью перемещаться с помощью кнопки «Tab».

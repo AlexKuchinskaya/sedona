@@ -252,7 +252,7 @@ input[type="checkbox"].visually-hidden {
   font-size: 14px;
   text-align: center;
 }
-.reason-first h2:::before,
+.reason-first h2::before,
 .reason-first h2::after {
   display: block;
   content: "";
@@ -493,7 +493,7 @@ input[type="checkbox"].visually-hidden {
   outline: none;
   text-transform: uppercase;
 }
-.search-variables input[type="text"]::placeholder {
+.search-variables input::placeholder {
   font: inherit;
   color: var(--basic-black);
   font-weight: bold;
